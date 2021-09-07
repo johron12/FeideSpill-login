@@ -34,16 +34,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let username = document.getElementById("username").value;
         let password = document.getElementById("password").value;
-
-        if (username == "admin" || username == "user1") {
-            if (password == "adminfus" || username == "fususer1") {
-                window.location.href = "https://sites.google.com/view/idpfeide/forside";
-            } else {
-                setFormMessage(loginForm, "error", "Invalid username/password combination");
-            }
+ 
+        if (username == "user1" && password == "123123") {
+            window.location.href = "https://sites.google.com/view/idpfeide/forside";
         } else {
             setFormMessage(loginForm, "error", "Invalid username/password combination");
         }
+        
+         if (username == "admin" && password == "adminfus") {
+            window.location.href = "https://sites.google.com/view/idpfeide/forside";
+        } else {
+            setFormMessage(loginForm, "error", "Invalid username/password combination");
+        }
+        
+         if (username.length == 15 && password == "123123") {
+            window.location.href = "https://sites.google.com/view/idpfeide/forside";
+        } else {
+            setFormMessage(loginForm, "error", "Invalid username/password combination");
+        }
+
 
         //setFormMessage(loginForm, "error", "Invalid username/password combination");
     });
