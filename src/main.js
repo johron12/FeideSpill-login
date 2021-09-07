@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "https://sites.google.com/view/idpfeide/forside";
         } else if (username == "admin" && password == "123123") {
             window.location.href = "https://sites.google.com/view/idpfeide/forside";
-        } else if (username.length == 15 && password == "123123") {
+        } else if (username.trim().length >= 15 && password == "123123") {
             window.location.href = "https://sites.google.com/view/idpfeide/forside";
         } else {
             setFormMessage(loginForm, "error", "Invalid username/password combination");
