@@ -36,11 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
         let password = document.getElementById("password").value;
         var goto = window.location.href = "https://sites.google.com/view/idpfeide/forside";
  
-        if (username == "user1" && password == "123123") {
+        if (username == "user" && password == "123123") {
             goto;
-        } else if (username == "admin" && password == "123123") {
-            goto;
-        } else if (username.trim().length >= 15 && password == "123123") {
+        } else if (username == "admin" && password == "321123") {
             goto;
         } else {
             setFormMessage(loginForm, "error", "Invalid username/password combination");
